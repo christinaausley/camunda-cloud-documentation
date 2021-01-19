@@ -13,8 +13,8 @@ module.exports = {
     ["@edno/docusaurus2-graphql-doc-generator",
       {
         schema: "./tasklist.graphqls",
-        rootPath: "./docs/reference", // docs will be generated under (rootPath/baseURL)
-        baseURL: "tasklist-api",
+        rootPath: "./docs/", // docs will be generated under (rootPath/baseURL)
+        baseURL: "reference/tasklist-api",
         linkRoot: "/docs/reference/"
       },
     ],
