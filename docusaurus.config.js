@@ -9,6 +9,16 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "camunda-cloud", // Usually your GitHub org/user name.
   projectName: "camunda-cloud-documentation", // Usually your repo name.
+  plugins: [
+    ["@edno/docusaurus2-graphql-doc-generator",
+      {
+        schema: "./tasklist.graphqls",
+        rootPath: "./docs/reference", // docs will be generated under (rootPath/baseURL)
+        baseURL: "tasklist-api",
+        linkRoot: "/docs/reference/"
+      },
+    ],
+    ],
   themeConfig: {
     navbar: {
       title: "Camunda Cloud Docs",
