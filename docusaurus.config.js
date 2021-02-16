@@ -12,10 +12,10 @@ module.exports = {
   plugins: [
     ["@edno/docusaurus2-graphql-doc-generator",
       {
-        schema: "./tasklist.graphqls",
+        schema: "http://localhost:8080/tasklist/graphql",
         rootPath: "./docs/", // docs will be generated under (rootPath/baseURL)
         baseURL: "reference/tasklist-api",
-        linkRoot: "/docs/reference/"
+        linkRoot: "/docs/"
       },
     ],
     ],
